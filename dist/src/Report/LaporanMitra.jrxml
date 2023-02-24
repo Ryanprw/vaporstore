@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="800" pageHeight="842" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="10"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     dmitra.`id_mitra` AS dmitra_id_mitra,
+     dmitra.`nama_mitra` AS dmitra_nama_mitra,
+     dmitra.`alamat_mitra` AS dmitra_alamat_mitra,
+     dmitra.`no_hp` AS dmitra_no_hp,
+     dmitra.`status_mitra` AS dmitra_status_mitra
+FROM
+     `dmitra` dmitra]]>
+	</queryString>
+	<field name="dmitra_id_mitra" class="java.lang.String"/>
+	<field name="dmitra_nama_mitra" class="java.lang.String"/>
+	<field name="dmitra_alamat_mitra" class="java.lang.String"/>
+	<field name="dmitra_no_hp" class="java.lang.String"/>
+	<field name="dmitra_status_mitra" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement x="191" y="0" width="443" height="44"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CIRACAS VAPOR SHOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="191" y="44" width="443" height="25"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Ciracas No.9, RT.3/RW.5, Ciracas, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13740]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="191" y="69" width="443" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Telp. 0811-1012-523]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="191" y="93" width="443" height="38"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Mitra]]></text>
+			</staticText>
+			<image>
+				<reportElement x="37" y="12" width="140" height="119"/>
+				<imageExpression><![CDATA["C:\\Users\\Ryan\\Downloads\\vapor.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="10" width="760" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="43" width="132" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="277" y="43" width="148" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="43" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="563" y="43" width="197" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="133" y="43" width="144" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="17" y="43" width="100" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Mitra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="43" width="116" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA MITRA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="43" width="118" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STATUS MITRA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="43" width="112" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="571" y="43" width="139" height="20" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO HP]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="132" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="133" y="0" width="144" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="277" y="0" width="148" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="425" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="563" y="0" width="197" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="17" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dmitra_id_mitra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="0" width="118" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dmitra_alamat_mitra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="0" width="116" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dmitra_nama_mitra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="0" width="112" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dmitra_no_hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="571" y="0" width="139" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dmitra_status_mitra}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="169" splitType="Stretch">
+			<staticText>
+				<reportElement x="571" y="78" width="63" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ciracas,]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="634" y="78" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="571" y="98" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="571" y="149" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tulus Alkahfi]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

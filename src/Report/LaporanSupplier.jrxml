@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="850" pageHeight="842" columnWidth="810" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     supplier.`id_supplier` AS supplier_id_supplier,
+     supplier.`nama` AS supplier_nama,
+     supplier.`kota` AS supplier_kota,
+     supplier.`alamat` AS supplier_alamat,
+     supplier.`no_hp` AS supplier_no_hp,
+     supplier.`email` AS supplier_email
+FROM
+     `supplier` supplier]]>
+	</queryString>
+	<field name="supplier_id_supplier" class="java.lang.Long"/>
+	<field name="supplier_nama" class="java.lang.String"/>
+	<field name="supplier_kota" class="java.lang.String"/>
+	<field name="supplier_alamat" class="java.lang.String"/>
+	<field name="supplier_no_hp" class="java.lang.String"/>
+	<field name="supplier_email" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="143" splitType="Stretch">
+			<staticText>
+				<reportElement x="194" y="0" width="443" height="44"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CIRACAS VAPOR SHOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="44" width="443" height="25"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Ciracas No.9, RT.3/RW.5, Ciracas, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13740]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="69" width="443" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Telp. 0811-1012-523]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="93" width="443" height="38"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Supplier]]></text>
+			</staticText>
+			<image>
+				<reportElement x="27" y="12" width="140" height="119"/>
+				<imageExpression><![CDATA["C:\\Users\\Ryan\\Downloads\\vapor.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="10" width="810" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="74" splitType="Stretch">
+			<rectangle>
+				<reportElement x="127" y="54" width="130" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="54" width="127" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="257" y="54" width="129" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="386" y="54" width="131" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="517" y="54" width="141" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="658" y="54" width="152" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="13" y="54" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="54" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="272" y="54" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="54" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="544" y="54" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nomor Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="54" width="116" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="127" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="127" y="0" width="130" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="257" y="0" width="129" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="386" y="0" width="131" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="517" y="0" width="141" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="658" y="0" width="152" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="13" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{supplier_id_supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{supplier_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{supplier_kota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{supplier_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="544" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{supplier_no_hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="0" width="116" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{supplier_email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="163" splitType="Stretch">
+			<staticText>
+				<reportElement x="517" y="84" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Petugas]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="580" y="64" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="517" y="64" width="63" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ciracas,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="517" y="143" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tulus Alkahfi]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

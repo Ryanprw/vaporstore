@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="800" pageHeight="842" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.331000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="91"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     dbbarang.`kode_barang` AS dbbarang_kode_barang,
+     dbbarang.`nama_barang` AS dbbarang_nama_barang,
+     dbbarang.`kategori` AS dbbarang_kategori,
+     dbbarang.`jumlah` AS dbbarang_jumlah,
+     dbbarang.`harga_barang` AS dbbarang_harga_barang
+FROM
+     `dbbarang` dbbarang]]>
+	</queryString>
+	<field name="dbbarang_kode_barang" class="java.lang.String"/>
+	<field name="dbbarang_nama_barang" class="java.lang.String"/>
+	<field name="dbbarang_kategori" class="java.lang.String"/>
+	<field name="dbbarang_jumlah" class="java.lang.String"/>
+	<field name="dbbarang_harga_barang" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="139" splitType="Stretch">
+			<staticText>
+				<reportElement x="196" y="0" width="443" height="44"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CIRACAS VAPOR SHOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="44" width="443" height="25"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Ciracas No.9, RT.3/RW.5, Ciracas, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13740]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="69" width="443" height="24"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Telp. 0811-1012-523]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="92" width="443" height="38"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Barang Masuk]]></text>
+			</staticText>
+			<image>
+				<reportElement x="40" y="11" width="140" height="119"/>
+				<imageExpression><![CDATA["C:\\Users\\Ryan\\Downloads\\vapor.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="10" width="759" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="44" width="140" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="140" y="44" width="142" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="282" y="44" width="140" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="422" y="44" width="166" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="588" y="44" width="172" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="44" width="100" height="20"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="44" width="100" height="20"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="44" width="100" height="20"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KATEGORI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="44" width="100" height="20"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STOCK BARANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="44" width="100" height="20"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HARGA BARANG]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="422" y="0" width="166" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="440" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dbbarang_jumlah}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="0" width="140" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="282" y="0" width="140" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="588" y="0" width="172" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="140" y="0" width="142" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="154" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dbbarang_nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dbbarang_kode_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dbbarang_kategori}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="620" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dbbarang_harga_barang}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="168" splitType="Stretch">
+			<staticText>
+				<reportElement x="568" y="75" width="63" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ciracas,]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="631" y="75" width="100" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="568" y="95" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="568" y="148" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tulus Alkahfi]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
